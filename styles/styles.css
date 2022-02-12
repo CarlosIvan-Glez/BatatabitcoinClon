@@ -142,9 +142,18 @@ main{
     color: #757575;
 }
 
+.main-tables-container{
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
 .main-currency-table,
 .main-commissions-table{
     width: 70%;
+    scroll-snap-align: center;
     min-height: 235px;
     max-width: 500px;
     height: 360px;
